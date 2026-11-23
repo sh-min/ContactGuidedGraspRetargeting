@@ -1,0 +1,579 @@
+{
+  "robotiq_2f85": {
+    "id": "robotiq_2f85",
+    "display_name": "Robotiq 2F-85",
+    "finger_count": 2,
+    "source": {
+      "repository": "https://github.com/google-deepmind/mujoco_menagerie",
+      "revision": "d7b481bac63d3d600ab404ee74f7474c5efe8a67",
+      "model_file": "robotiq_2f85/2f85.xml",
+      "model_sha256": "d48aca5f9151798ffd38111ce4e8b2081f3ec2d4f525161b33643451580010de",
+      "license": "BSD-2-Clause",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/d7b481bac63d3d600ab404ee74f7474c5efe8a67/robotiq_2f85",
+      "assets_sha256": "929c3bfd8211ff96388a99b015c578432ace82560808892e22381702f2d4f0b2"
+    },
+    "finger_groups": [
+      {
+        "id": "right",
+        "body_names": [
+          "right_driver",
+          "right_coupler",
+          "right_spring_link",
+          "right_follower",
+          "right_pad",
+          "right_silicone_pad"
+        ],
+        "joint_names": [
+          "right_driver_joint",
+          "right_coupler_joint",
+          "right_spring_link_joint",
+          "right_follower_joint"
+        ],
+        "tip_body": "right_silicone_pad",
+        "tip_site": null,
+        "collision_geom_ids": [
+          5,
+          7,
+          9,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": "left",
+        "body_names": [
+          "left_driver",
+          "left_coupler",
+          "left_spring_link",
+          "left_follower",
+          "left_pad",
+          "left_silicone_pad"
+        ],
+        "joint_names": [
+          "left_driver_joint",
+          "left_coupler_joint",
+          "left_spring_link_joint",
+          "left_follower_joint"
+        ],
+        "tip_body": "left_silicone_pad",
+        "tip_site": null,
+        "collision_geom_ids": [
+          17,
+          19,
+          21,
+          23,
+          24,
+          25
+        ]
+      }
+    ],
+    "neutral_ctrl": [
+      0.0
+    ],
+    "expected": {
+      "nq": 8,
+      "nv": 8,
+      "nu": 1,
+      "na": 0,
+      "njnt": 8,
+      "neq": 3,
+      "ntendon": 1,
+      "nplugin": 0
+    },
+    "human_fingers": [
+      0,
+      1
+    ]
+  },
+  "shadow_dexee": {
+    "id": "shadow_dexee",
+    "display_name": "Shadow DEX-EE",
+    "finger_count": 3,
+    "source": {
+      "repository": "https://github.com/google-deepmind/mujoco_menagerie",
+      "revision": "d7b481bac63d3d600ab404ee74f7474c5efe8a67",
+      "model_file": "shadow_dexee/shadow_dexee.xml",
+      "model_sha256": "7d7ad518b01451f58d3e5f3e59e58719741efead2d7730c9cf800f7d766f267a",
+      "license": "Apache-2.0",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/d7b481bac63d3d600ab404ee74f7474c5efe8a67/shadow_dexee",
+      "assets_sha256": "cbfc415de665d6285bb1a06af7c5c635d0c9f00acb2a7e92a02be568138a7de4"
+    },
+    "finger_groups": [
+      {
+        "id": "F0",
+        "body_names": [
+          "F0/",
+          "F0/finger_base",
+          "F0/finger_knuckle",
+          "F0/finger_proximal",
+          "F0/finger_middle",
+          "F0/finger_distal"
+        ],
+        "joint_names": [
+          "F0/J0",
+          "F0/J1",
+          "F0/J2",
+          "F0/J3"
+        ],
+        "tip_body": "F0/finger_distal",
+        "tip_site": "F0/fingertip_site",
+        "collision_geom_ids": [
+          13,
+          16,
+          23,
+          28,
+          34,
+          35
+        ]
+      },
+      {
+        "id": "F1",
+        "body_names": [
+          "F1/",
+          "F1/finger_base",
+          "F1/finger_knuckle",
+          "F1/finger_proximal",
+          "F1/finger_middle",
+          "F1/finger_distal"
+        ],
+        "joint_names": [
+          "F1/J0",
+          "F1/J1",
+          "F1/J2",
+          "F1/J3"
+        ],
+        "tip_body": "F1/finger_distal",
+        "tip_site": "F1/fingertip_site",
+        "collision_geom_ids": [
+          45,
+          48,
+          55,
+          60,
+          66,
+          67
+        ]
+      },
+      {
+        "id": "F2",
+        "body_names": [
+          "F2/",
+          "F2/finger_base",
+          "F2/finger_knuckle",
+          "F2/finger_proximal",
+          "F2/finger_middle",
+          "F2/finger_distal"
+        ],
+        "joint_names": [
+          "F2/J0",
+          "F2/J1",
+          "F2/J2",
+          "F2/J3"
+        ],
+        "tip_body": "F2/finger_distal",
+        "tip_site": "F2/fingertip_site",
+        "collision_geom_ids": [
+          77,
+          80,
+          87,
+          92,
+          98,
+          99
+        ]
+      }
+    ],
+    "neutral_ctrl": [
+      0.0,
+      -0.5,
+      0.5,
+      0.0,
+      0.0,
+      -0.5,
+      0.5,
+      0.0,
+      0.0,
+      -0.5,
+      0.5,
+      0.0
+    ],
+    "expected": {
+      "nq": 12,
+      "nv": 12,
+      "nu": 12,
+      "na": 24,
+      "njnt": 12,
+      "neq": 0,
+      "ntendon": 0,
+      "nplugin": 4
+    },
+    "human_fingers": [
+      0,
+      1,
+      2
+    ]
+  },
+  "leap_hand": {
+    "id": "leap_hand",
+    "display_name": "LEAP Hand (right)",
+    "finger_count": 4,
+    "source": {
+      "repository": "https://github.com/google-deepmind/mujoco_menagerie",
+      "revision": "d7b481bac63d3d600ab404ee74f7474c5efe8a67",
+      "model_file": "leap_hand/right_hand.xml",
+      "model_sha256": "9d8f25c38bdb60617f378c07b7e71f97306471353c81bf281eb9943f3f2340d8",
+      "license": "MIT",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/d7b481bac63d3d600ab404ee74f7474c5efe8a67/leap_hand",
+      "assets_sha256": "969d34ccdd8cccb84181804ba101568a60a30f43131d4abe191e41db3b77fa82"
+    },
+    "finger_groups": [
+      {
+        "id": "if",
+        "body_names": [
+          "if_bs",
+          "if_px",
+          "if_md",
+          "if_ds"
+        ],
+        "joint_names": [
+          "if_mcp",
+          "if_rot",
+          "if_pip",
+          "if_dip"
+        ],
+        "tip_body": "if_ds",
+        "tip_site": null,
+        "collision_geom_ids": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19,
+          21,
+          22,
+          23,
+          24,
+          25,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      {
+        "id": "mf",
+        "body_names": [
+          "mf_bs",
+          "mf_px",
+          "mf_md",
+          "mf_ds"
+        ],
+        "joint_names": [
+          "mf_mcp",
+          "mf_rot",
+          "mf_pip",
+          "mf_dip"
+        ],
+        "tip_body": "mf_ds",
+        "tip_site": null,
+        "collision_geom_ids": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          42,
+          43,
+          44,
+          45,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      {
+        "id": "rf",
+        "body_names": [
+          "rf_bs",
+          "rf_px",
+          "rf_md",
+          "rf_ds"
+        ],
+        "joint_names": [
+          "rf_mcp",
+          "rf_rot",
+          "rf_pip",
+          "rf_dip"
+        ],
+        "tip_body": "rf_ds",
+        "tip_site": null,
+        "collision_geom_ids": [
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          59,
+          61,
+          62,
+          63,
+          64,
+          65,
+          67,
+          68,
+          69,
+          70
+        ]
+      },
+      {
+        "id": "th",
+        "body_names": [
+          "th_mp",
+          "th_bs",
+          "th_px",
+          "th_ds"
+        ],
+        "joint_names": [
+          "th_cmc",
+          "th_axl",
+          "th_mcp",
+          "th_ipl"
+        ],
+        "tip_body": "th_ds",
+        "tip_site": null,
+        "collision_geom_ids": [
+          72,
+          74,
+          75,
+          76,
+          78,
+          79,
+          80,
+          81,
+          82,
+          84,
+          85,
+          86,
+          87
+        ]
+      }
+    ],
+    "neutral_ctrl": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "expected": {
+      "nq": 16,
+      "nv": 16,
+      "nu": 16,
+      "na": 0,
+      "njnt": 16,
+      "neq": 0,
+      "ntendon": 0,
+      "nplugin": 0
+    },
+    "human_fingers": [
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  "shadow_hand": {
+    "id": "shadow_hand",
+    "display_name": "Shadow Dexterous Hand (right)",
+    "finger_count": 5,
+    "source": {
+      "repository": "https://github.com/google-deepmind/mujoco_menagerie",
+      "revision": "d7b481bac63d3d600ab404ee74f7474c5efe8a67",
+      "model_file": "shadow_hand/right_hand.xml",
+      "model_sha256": "ac14d09dd12b62c3ca62233d0ac646101cc718146dda76e26d0b993a91abf399",
+      "license": "Apache-2.0",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/d7b481bac63d3d600ab404ee74f7474c5efe8a67/shadow_hand",
+      "assets_sha256": "b7c8cda2eecabcc74fcd41a29f20cd97ca074a85efe3fbd2a0a2b49a8654395d"
+    },
+    "finger_groups": [
+      {
+        "id": "ff",
+        "body_names": [
+          "rh_ffknuckle",
+          "rh_ffproximal",
+          "rh_ffmiddle",
+          "rh_ffdistal"
+        ],
+        "joint_names": [
+          "rh_FFJ4",
+          "rh_FFJ3",
+          "rh_FFJ2",
+          "rh_FFJ1"
+        ],
+        "tip_body": "rh_ffdistal",
+        "tip_site": null,
+        "collision_geom_ids": [
+          20,
+          22,
+          24,
+          26
+        ]
+      },
+      {
+        "id": "mf",
+        "body_names": [
+          "rh_mfknuckle",
+          "rh_mfproximal",
+          "rh_mfmiddle",
+          "rh_mfdistal"
+        ],
+        "joint_names": [
+          "rh_MFJ4",
+          "rh_MFJ3",
+          "rh_MFJ2",
+          "rh_MFJ1"
+        ],
+        "tip_body": "rh_mfdistal",
+        "tip_site": null,
+        "collision_geom_ids": [
+          28,
+          30,
+          32,
+          34
+        ]
+      },
+      {
+        "id": "rf",
+        "body_names": [
+          "rh_rfknuckle",
+          "rh_rfproximal",
+          "rh_rfmiddle",
+          "rh_rfdistal"
+        ],
+        "joint_names": [
+          "rh_RFJ4",
+          "rh_RFJ3",
+          "rh_RFJ2",
+          "rh_RFJ1"
+        ],
+        "tip_body": "rh_rfdistal",
+        "tip_site": null,
+        "collision_geom_ids": [
+          36,
+          38,
+          40,
+          42
+        ]
+      },
+      {
+        "id": "lf",
+        "body_names": [
+          "rh_lfmetacarpal",
+          "rh_lfknuckle",
+          "rh_lfproximal",
+          "rh_lfmiddle",
+          "rh_lfdistal"
+        ],
+        "joint_names": [
+          "rh_LFJ5",
+          "rh_LFJ4",
+          "rh_LFJ3",
+          "rh_LFJ2",
+          "rh_LFJ1"
+        ],
+        "tip_body": "rh_lfdistal",
+        "tip_site": null,
+        "collision_geom_ids": [
+          44,
+          46,
+          48,
+          50,
+          52
+        ]
+      },
+      {
+        "id": "th",
+        "body_names": [
+          "rh_thbase",
+          "rh_thproximal",
+          "rh_thhub",
+          "rh_thmiddle",
+          "rh_thdistal"
+        ],
+        "joint_names": [
+          "rh_THJ5",
+          "rh_THJ4",
+          "rh_THJ3",
+          "rh_THJ2",
+          "rh_THJ1"
+        ],
+        "tip_body": "rh_thdistal",
+        "tip_site": null,
+        "collision_geom_ids": [
+          53,
+          55,
+          56,
+          58,
+          59,
+          61
+        ]
+      }
+    ],
+    "neutral_ctrl": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "expected": {
+      "nq": 24,
+      "nv": 24,
+      "nu": 20,
+      "na": 0,
+      "njnt": 24,
+      "neq": 0,
+      "ntendon": 4,
+      "nplugin": 0
+    },
+    "human_fingers": [
+      1,
+      2,
+      3,
+      4,
+      0
+    ]
+  }
+}
