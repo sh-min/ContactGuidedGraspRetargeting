@@ -2,6 +2,8 @@
 
 Retarget an annotated human grasp video to a two-finger Robotiq 2F-85, three-finger Shadow DEX-EE, four-finger LEAP Hand or five-finger Shadow Hand. The module produces a wrist pose and native joint trajectory for every selected frame. With a background plate and an object mask, it also renders the robot hand into the original camera view.
 
+[국문 논문 초안 · 비교 그림 · 참고문헌](paper/README.md)
+
 ## How it works
 
 1. Read the right-hand MANO mesh, object pose and camera calibration at each source frame. Identify human hand vertices near the object and project penetrating vertices onto a convex collision proxy. Keep the original object mesh for rendering.
